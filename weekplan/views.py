@@ -9,6 +9,11 @@ def home_view(reguest, *args, **kwargs):
     #return HttpResponse("<h1>Hello world</h1>")
     return render(reguest, "pages/home.html", context={}, status=200)
 
+def week_view(reguest, *args, **kwargs):
+    print(args, kwargs)
+    #return HttpResponse("<h1>Hello world</h1>")
+    return render(reguest, "pages/weekplan.html", context={}, status=200)
+
 def kek_home_view(reguest,week_id, *args, **kwargs):
     
     """

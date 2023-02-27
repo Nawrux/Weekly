@@ -16,11 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from weekplan.views import home_view, kek_home_view
+from weekplan.views import home_view, kek_home_view, week_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',home_view),
-    path('week/<int:week_id>',kek_home_view)
+    #path('week/<int:week_id>',kek_home_view)
+    path('week/', week_view)
 ]
 
